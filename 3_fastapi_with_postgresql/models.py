@@ -16,7 +16,7 @@ class Book(Base):
     category = Column(String, index=True)
 
 class Coffee(Base):
-    __tablename__ = 'coffee'
+    __tablename__ = 'coffees'
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
