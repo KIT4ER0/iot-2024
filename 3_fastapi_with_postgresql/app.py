@@ -66,8 +66,8 @@ async def update_book(book_id: int, book: dict, db: Session = Depends(get_db)):
         existing_book.is_published = book['is_published']
     if 'detail' in book:
         existing_book.detail = book['detail']
-    if 'sysnopsis' in book:
-        existing_book.synopsis = book['sysnopsis']
+    if 'synopsis' in book:
+        existing_book.synopsis = book['synopsis']
     if 'category' in book:
         existing_book.category = book['category']
     db.commit()
